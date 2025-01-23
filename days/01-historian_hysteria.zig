@@ -6,7 +6,7 @@ pub fn main() !void {
     const cwd = std.fs.cwd();
     var resources_dir = try cwd.openDir("resources", .{});
     defer resources_dir.close();
-    var resource_file = try resources_dir.openFile("01-historian-hysteria.txt", .{});
+    var resource_file = try resources_dir.openFile("01-historian_hysteria.txt", .{});
     defer resource_file.close();
 
     // Get file size
